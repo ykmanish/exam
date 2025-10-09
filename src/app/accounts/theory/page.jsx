@@ -1,4 +1,3 @@
-// pages/financial-statements.js or app/financial-statements/page.js
 'use client';
 import { useState, useEffect } from 'react';
 
@@ -604,7 +603,7 @@ export default function FinancialStatementsGuide() {
                                   {sub.name}
                                 </h5>
                                 <div className="space-y-2">
-                                  {sub.items.map((item, k) => (
+                                  {sub.items && sub.items.map((item, k) => (
                                     <div key={k} className={`${
                                       darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
                                     } p-3 rounded border-l-4 ${
